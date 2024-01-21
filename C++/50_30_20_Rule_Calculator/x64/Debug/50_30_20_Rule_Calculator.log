@@ -1,0 +1,5 @@
+﻿  50_30_20_Rule_Calculator.cpp
+C:\Users\Work Environment\source\repos\50_30_20_Rule_Calculator\50_30_20_Rule_Calculator.cpp(13,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Work Environment\source\repos\50_30_20_Rule_Calculator\50_30_20_Rule_Calculator.cpp(14,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Work Environment\source\repos\50_30_20_Rule_Calculator\50_30_20_Rule_Calculator.cpp(15,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  50_30_20_Rule_Calculator.vcxproj -> C:\Users\Work Environment\source\repos\50_30_20_Rule_Calculator\x64\Debug\50_30_20_Rule_Calculator.exe
