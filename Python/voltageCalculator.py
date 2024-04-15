@@ -2,15 +2,9 @@
 resistors = []
 def voltage(i, r):
   volt = i * r
-  return volt
+  return print('Your Voltage is ' + volt + 'Volts')
 
-def current(v, r):
-  cur = v / r
-  return cur
 
-def resistance(v, i):
-  res = v / i
-  return res
 
 def main():
   circuit_type = input('Press S for Series, P for Parallel, C for a combination of the 2: ')
@@ -19,7 +13,10 @@ def main():
     for i in range(0, res_num_series):
       resistance = input("Enter the resistance in Ohms for this resistor")
       resistors.append(resistance)
-    total_resistance = sum(resistors)
+    total_resistance = 1/sum(resistors)
+    current = input('How much current is flowing through your circuit? ')
+    voltage(current, total_resistance)
+    
     
       
 
