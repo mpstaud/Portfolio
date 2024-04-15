@@ -17,7 +17,9 @@ def main():
     current = input('How much current is flowing through your circuit? ')
     voltage(current, total_resistance)
     
-    
+if __name__ == '__main__':
+    # Run main method
+    main()
       
 
 
