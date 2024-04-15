@@ -19,6 +19,8 @@ def main():
     for i in range(0, res_num_series):
       resistance = input("Enter the resistance in Ohms for this resistor")
       resistors.append(resistance)
+    total_resistance = sum(resistors)
+    
       
 
 
