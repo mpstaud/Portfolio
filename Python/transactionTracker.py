@@ -40,3 +40,4 @@ def main():
 if __name__ == '__main__':
     # Run main method
     main()
+    df.to_csv('Transactions.csv', index=False)
