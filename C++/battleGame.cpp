@@ -19,19 +19,19 @@ basic_string<char> chooseAction(){
     return x;
 }
 basic_string<char> cpuAction(){
-    string y;
-    y = "A";
+    string y{"A"};
     return y;
 }
 
 
 int main(){
-    int playerHealth = {100};
-    int enemyHealth = {100};
+    int playerHealth{100};
+    int enemyHealth{100};
     basic_string<char> dec = chooseAction();
     basic_string<char> cpu = cpuAction();
     cout << playerHealth << endl;
     cout << enemyHealth << endl;
     cout << dec << endl;
     cout << cpu << endl;
+    return 0;
 }
