@@ -19,7 +19,7 @@ basic_string<char> chooseAction(){
     return x;
 }
 basic_string<char> cpuAction(){
-    string y{"A"};
+    basic_string<char> y{"A"};
     return y;
 }
 
