@@ -2,7 +2,7 @@
 // Created by Matthew Staudacher on 5/8/24.
 //
 # include <iostream>
-using namespace std;
+
 
 int playerHealth{100};
 
@@ -24,35 +24,30 @@ int specialAttack(int health)
     return health;
 }
 
-void chooseAction(basic_string<char> x, basic_string<char> player)
-{
-    if (player == "Player" && x == "A")
-        enemyHealth = attack(enemyHealth);
-    if (player == "CPU" && x == "A")    
-}
-
-
 
 int main()
 {
-    basic_string<char> input;
-    cout << "Attack, Special Attack, or Heal? --> " << endl;
-    cin >> input >> endl;
-    
-    switch (input) 
-    {
-    case 'A':
-        cout << "Result: " << attack() << endl;
-        break;
-    case 'S':
-        cout << "Result: " << specialAttack() << endl;
-        break;
-    case 'H':
-        cout << "Result: " << heal() << endl;
-        break;
 
+    while (playerHealth > 0 && enemyHealth > 0){
+        std::basic_string<char> input;
+        std::cout << "Attack, Special Attack, or Heal?" << std::endl;
+        std::cin >> input;
+        if (input == "A")
+            enemyHealth = attack(enemyHealth);
+        else if (input == "H")
+            playerHealth = heal(playerHealth);
+        else if (input == "S")
+            enemyHealth = specialAttack(enemyHealth);
+        else
+            std::cout << "Character not allowed" << std::endl;
+
+        
     }
+    if (playerHealth <= 0)
+        std::cout << "You Lose" << std::endl;
+    if (enemyHealth <= 0)
+        std::cout << "You " << "are " << "victorious!";
 
-    
+
     return 0;
 }

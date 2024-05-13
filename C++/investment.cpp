@@ -19,7 +19,7 @@ double total_value(double p,double i,int t)
 
 int main()
     {
-    cout << "Enter your principal investment: ";
+    cout << "Enter your principal amount: ";
     cin >> principal;
     cout << "Enter your interest rate: ";
     cin >> interest_rate;
