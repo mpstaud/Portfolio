@@ -38,7 +38,21 @@ int main()
     basic_string<char> input;
     cout << "Attack, Special Attack, or Heal? --> " << endl;
     cin >> input >> endl;
-    chooseAction(input, "Player");
+    
+    switch (input) 
+    {
+    case 'A':
+        cout << "Result: " << attack() << endl;
+        break;
+    case 'S':
+        cout << "Result: " << specialAttack() << endl;
+        break;
+    case 'H':
+        cout << "Result: " << heal() << endl;
+        break;
+
+    }
+
     
     return 0;
 }
