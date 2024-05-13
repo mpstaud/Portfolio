@@ -3,30 +3,35 @@
 //
 # include <iostream>
 using namespace std;
+int playerHealth{100};
+int enemyHealth{100};
 
-int attack(int damage, int health){
-    health = health - damage;
+int attack(int health){
+    health = health - 20;
     return health;
 }
-int heal(int healing, int health){
-    health = health + healing;
+int heal(int health){
+    health = health + 40;
     return health;
 }
-basic_string<char> chooseAction(){
-    string x;
-    cout << "A to attack, H to heal: " << endl;
-    cin >> x;
-    return x;
+void chooseAction(basic_string<char> x, basic_string<char> player){
+    if (player == "Player" && x == "A")
+        enemyHealth = attack(enemyHealth);
+    if (player == "CPU" && x == "A")
+        
+        
+        
+        
+        
+        
+        
+    
 }
-basic_string<char> cpuAction(){
-    basic_string<char> y{"A"};
-    return y;
-}
+
 
 
 int main(){
-    int playerHealth{100};
-    int enemyHealth{100};
+    
     basic_string<char> dec = chooseAction();
     basic_string<char> cpu = cpuAction();
     cout << playerHealth << endl;
