@@ -4,10 +4,6 @@
 # include <iostream>
 
 
-int playerHealth{100};
-
-int enemyHealth{100};
-
 int attack(int health)
 {
     health = health - 20;
@@ -25,10 +21,11 @@ int specialAttack(int health)
 }
 
 
-int main()
+int main(){
+    int playerHealth = 100 ;
 
-{
-    while (playerHealth > 0 && enemyHealth > 0){
+    int enemyHealth = 100;
+    while (playerHealth > 0 && enemyHealth > 0) {
         std::basic_string<char> input;
         std::cout << "Attack, Special Attack, or Heal?" << std::endl;
         std::cin >> input;
@@ -44,12 +41,14 @@ int main()
 
         playerHealth = attack(playerHealth);
     }
-    if (playerHealth <= 0 && enemyHealth > 0)
+    if (playerHealth <= 0 && enemyHealth > 0) {
         std::cout << "You Lose" << std::endl;
-    else if (enemyHealth <= 0 && playerHealth > 0)
+    }
+    else if (enemyHealth <= 0 && playerHealth > 0) {
         std::cout << "You " << "are " << "victorious!";
-    else
+    }
+    else {
         std::cout << "It's a draw";
-
+    }
     return 0;
 }
