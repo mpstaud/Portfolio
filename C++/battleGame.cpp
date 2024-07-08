@@ -27,7 +27,7 @@ int main(){
     int enemyHealth = 100;
     while (playerHealth > 0 && enemyHealth > 0) {
         std::basic_string<char> input;
-        std::cout << "Attack, Special Attack, or Heal?" << std::endl;
+        std::cout << "Attack, Special Attack, or Heal?";
         std::cin >> input;
 
         if (input == "A")
@@ -36,10 +36,10 @@ int main(){
             playerHealth = heal(playerHealth);
         else if (input == "S")
             enemyHealth = specialAttack(enemyHealth);
-        else
-            std::cout << "Character not allowed" << std::endl;
 
         playerHealth = attack(playerHealth);
+        std::cout << "Player Health: "<< playerHealth << std::endl;
+        std::cout << "Enemy Health: " << enemyHealth << std::endl;
     }
     if (playerHealth <= 0 && enemyHealth > 0) {
         std::cout << "You Lose" << std::endl;
