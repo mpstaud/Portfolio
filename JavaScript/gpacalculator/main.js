@@ -27,12 +27,19 @@ function getInputValue(){
   let grade3 = document.getElementById("input3").value;
   let grade4 = document.getElementById("input4").value;
   let grade5 = document.getElementById("input5").value;
-  
-  const letterGrades = new Array(grade1,grade2,grade3,grade4,grade5);
-  let length = letterGrades.length;
+  let credit1 = document.getElementById("input6").value;
+  let credit2 = document.getElementById("input7").value;
+  let credit3 = document.getElementById("input8").value;
+  let credit4 = document.getElementById("input9").value;
+  let credit5 = document.getElementById("input10").value;
+  let totalCredits = credit1 + credit2 + credit3 + credit4 + credit5;
+  const pointValues = new Array(qualityPoints(grade1,credit1),qualityPoints(grade2,credit2),qualityPoints(grade3,credit3),qualityPoints(grade4,credit4),qualityPoints(grade5,credit5));
+  let length = pointValues.length;
+  let totalQpoints = 0;
   for (let i=0; i < length; i++){
-    
+    totalQpoints += pointValues[i];
   }
+  cgpa = totalQpoints / totalCredits;
 
-  return;
+  return cgpa;
 }
