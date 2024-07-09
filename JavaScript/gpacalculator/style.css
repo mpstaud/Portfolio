@@ -1,19 +1,31 @@
 html {
   background-color: black;
-  margin: 0px;
-  padding: 0px;
+  margin: 0 px;
+  padding: 0 px;
   
+}
+h1, p {
+  color: white;
+  text-align: center;
+
 }
 
 body {
-  margin: 20px;
+  margin: 20 px;
 }
 #calculator{
   margin-top: 20px;
-  margin-left: 35%;
-  width: 800px;
+  margin-left: 25%;
+  width: 50%;
   height: 600px;
   border-radius: 20px;
   background-color: blue; 
 }
-
+input{
+  margin-left: 40px;
+  width: 200px;
+}
+button{
+  margin-left: 40px;
+  width: 100px
+}
