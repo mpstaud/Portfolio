@@ -1,4 +1,19 @@
 html {
   background-color: black;
+  margin: 0 px;
+  padding: 0 px;
   
 }
+
+body {
+  margin: 20 px;
+}
+#calculator{
+  margin-top: 20px;
+  margin-left: 35%;
+  width: 800px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: blue; 
+}
+
