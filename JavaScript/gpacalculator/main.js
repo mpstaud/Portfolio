@@ -40,6 +40,7 @@ function getInputValue(){
     totalQpoints += pointValues[i];
   }
   cgpa = totalQpoints / totalCredits;
+  alert("Your GPA is: " + cgpa)
 
-  return cgpa;
+  return;
 }
